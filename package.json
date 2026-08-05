@@ -1,0 +1,25 @@
+{
+  "name": "ox1s-fe-fwk-project",
+  "version": "1.0.0",
+  "description": "A project to learn how to write a frontend framework",
+  "private": true,
+  "workspaces": [
+    "packages/runtime"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "serve:examples": "npx http-server . -o ./examples/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ox1s/ox1s-fe-fwk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ox1s/ox1s-fe-fwk/issues"
+  },
+  "homepage": "https://github.com/ox1s/ox1s-fe-fwk#readme"
+}
