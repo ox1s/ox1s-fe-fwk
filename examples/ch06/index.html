@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter</title>
+    <script type="module">
+        import {
+            createApp,
+            h,
+            hString
+        } from "https://unpkg.com/ox1s-fe-fwk@1.0.2";
+
+        const state = {count: 0}
+        const View = (state, emit) => h('div', {}, [
+            h('button', {on: {click: () => emit('increment')}}, ['+']),
+            h('span', {}, [hString(state.count)]),
+            h('button', {on: {click: () => emit('decrement')}}, ['-']),
+        ])
+        const reducers = {
+            increment: (state) => ({
+                count: state.count + 1
+            }),
+            decrement: (state) => ({
+                count: state.count - 1
+            })
+        }
+        createApp({state, view: View, reducers}).mount(document.body)
+    </script>
+</head>
+<body>
+<h1>Counter</h1>
+</body>
+</html>

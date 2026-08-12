@@ -1,6 +1,6 @@
 {
   "name": "ox1s-fe-fwk",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/ox1s-fe-fwk.js",
   "files": [
