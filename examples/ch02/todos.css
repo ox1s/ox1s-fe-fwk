@@ -16,14 +16,18 @@ h1 {
 }
 
 button {
-    background: #b1d080;
     border: 2px solid black;
     border-radius: 4px;
     color: #000000;
     margin: 5px;
     padding: 2px 10px;
-    transition: margin-right 2s,
-    color 1s;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+button:disabled {
+    background: #597434;
+}
+button:enabled {
+    background: #b1d080;
 }
 
 .todo-form label {
